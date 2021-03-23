@@ -1,0 +1,59 @@
+﻿<!DOCTYPE>
+<html>
+  <head lang="cs">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Evidence knih</title>
+  </head>
+  <body>
+    
+       <div class="wholeNav">
+         <div id="toogle">
+           <i id="stripes" class="fa fa-bars"></i>
+         </div>      
+         <div class="nav" id="navmenu">
+           <ul class="categories">
+             <li><a class="navList" href="index.html">Hlavní stránka</a></li>
+             <li><a class="navList" href="evidenceKnih.html">Evidence knih</a></li>
+             <li><a class="navList" href="evidenceVypujcek.html">Evidence výpůjček</a></li>
+             <li><label class="switch">
+                 <input type="checkbox">
+                 <span class="slider round"></span>
+                 </label></li> 
+           </ul>
+         </div>
+       </div>  
+        
+       <div class="wholePage">
+         <div class="category1"> 
+           <div class="database">
+             <button id="delBtn"><b>Odstranit celou databázi</b></button>
+             <br>
+             <br>
+             <p>Filtrovat: <input type="text" id="filtr"> podle: <select id="typ"><option value="bookName">Název knihy</option><option value="bookDate">Rok vydání</option><option value="genr">Žánr</option><option value="avail">Dostupnost</option></select></p>
+             <div id="container">
+               <table id="info">
+               </table>
+             <br>
+             </div>  
+           </div>         
+          
+           <p>Název knihy: <input type="text" id="nameOfBook"></p>
+           <p>Rok vydání: <input type="number" id="releaseDate"></p>
+           <p>Žánr: <input type="text" id="genre"></p>
+           <button id="addBtn">Přidat knihu</button>
+         </div>
+          
+         <footer class="ending">
+           <p>
+              Vytvořil &copy;Jan Knoth v roce 2021.
+           </p>
+         </footer>  
+       </div>       
+      
+      <script type="text/javascript" src="skriptEvidenceKnih.js"></script> 
+      <script type="text/javascript" src="general.js"></script> 
+
+  </body>
+</html>

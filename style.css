@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+  font-family: Arial;
+
+}
+
+.wholeNav {
+  background-color: #292d36;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  display: flex;
+  transition: 1s all;
+
+}
+
+.nav {
+  position: relative;
+  height: 100%;
+  width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+#toogle {
+  display: none;
+
+}
+
+.categories {
+  list-style-type: none;
+  margin-right: 50px;
+  margin-top: 28px;
+  
+}
+
+
+.dark {
+  position: relative;
+  margin-left: 550px;
+  top: -35px; 
+
+}
+
+.categories li {
+  display: inline;
+  padding: 19px;  
+  transition: .4s all;
+  margin: 0 -5px 0 0;
+  
+}
+
+.categories li:hover {
+  background-color: red;
+  transition: .4s all;
+
+}
+
+.categories li:hover:nth-child(4){
+  background-color: rgba(0, 0, 0, 0);
+
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+     
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 24px;
+  top: -1px;
+  
+}
+
+.switch input {
+  opacity: 0;
+  
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 21px;
+  width: 21px;
+  left: 4px;
+  bottom: 1.2px;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+}
+
+.slider:after {
+  position: absolute;
+  content:"Dark";
+  font-size: 12px;
+  display: block;
+  top: 20%;
+  left: 50%;
+  color: black;
+   
+}
+
+input:checked + .slider {
+  background-color: black;
+  border: 0.5px solid white; 
+  
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+  
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
+  background-color: white;
+  
+}
+
+input:checked + .slider:after {
+  position: absolute;
+  content:"Light";
+  font-size: 12px;
+  display: block;
+  top: 14%;
+  left: 10%;
+  color: white;
+  
+}
+
+.slider.round {
+  border-radius: 34px;
+  
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  
+}
+
+.wholePage {
+  position: relative;
+  top: 80px;
+  width: 100%;
+  height: auto;
+  background-color: grey;
+
+}
+
+.category1 {
+  position: relative;
+  background-color: white;
+  width: 790px;
+  margin: 0 auto;
+  height: auto;
+  padding: 10px; 
+
+}
+
+.categoryIndividual {
+  position: relative;
+  background-color: white;
+  width: 790px;
+  margin: 0 auto;
+  height: auto;
+  padding: 10px;
+   
+}
+
+#welcome {
+  text-align: center;
+
+}
+
+#info {
+  width: 100%;
+  padding: 5px;
+
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 0.2rem;
+
+}
+
+.ending {
+  width: 100%;
+  background-color: #292d36;
+  height: 60px;
+  position: absolute;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  color: white;
+
+}
+
+.endingIndividual {
+  width: 100%;
+  background-color: #292d36;
+  height: 60px;
+  position: absolute;
+  padding: 25px 0 20px 0;
+  text-align: center;
+  color: white;
+
+}
+
+@media (max-width: 1000px) {
+  body {
+   background-color: white;
+ 
+  } 
+ 
+  .nav {
+    display: none; 
+  
+  }
+  
+  .active { 
+    color: white;
+    background-color:#292d36;
+    height: 290px;
+    width: 100%;
+    display: block;
+    margin-top: 70px;  
+    z-index: 1100; 
+    position:fixed;
+    
+  }
+  
+  #toogle {
+    color: white;
+    background-color:#292d36;
+    width: 100%;    
+    font-size: 1.3em;
+    text-align: left;
+    text-decoration: none;                                       
+    display: block;
+    position:fixed;
+    z-index: 1000;
+
+                 
+  }
+
+  #toogle i {
+    margin: 25px 10px;  
+    box-sizing: border-box;  
+     
+  }
+  
+  .categories li {
+    display: block;
+  
+}
+  
+  .wholePage {
+    width: 100%;
+    background-color: white;
+    
+  }  
+  
+  .category1 {
+    width: 94%;
+  
+  }
+    
+  .categoryIndividual {
+    width: 94%;
+    height: auto; 
+    position: relative;
+    margin: 0 auto;
+  
+  }
+    
+}
